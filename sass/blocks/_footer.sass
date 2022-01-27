@@ -1,0 +1,54 @@
+.footer
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 8rem
+    left: 7rem
+    right: 0
+    bottom: 0
+    width: 11rem
+    height: 12.5rem
+    background-image: url(../img/background-left.svg)
+    background-repeat: no-repeat
+    background-size: cover
+  &::after
+    content: ''
+    position: absolute
+    top: 2rem
+    right: 12rem
+    bottom: 0
+    width: 23.3rem
+    height: 26.4rem
+    background-image: url(../img/background-right.svg)
+    background-repeat: no-repeat
+    background-size: cover
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: top
+    padding: 15.5rem 12rem 8.4rem 12rem
+  &__header
+    margin-bottom: 1.7rem
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 16px
+    color: #000000
+  &__inst
+    &-img
+      width: 3.3rem
+      height: 3.5rem
+  &__list
+    font-weight: 300
+    font-size: 1.4rem
+    color: #000000
+    font-style: normal
+    &-contact
+      line-height: 0.9rem
+      margin-bottom: 1rem
+    &-address
+      line-height: 1.6rem
+      margin-bottom: 1rem
+  &__address
+    width: 22.4rem
