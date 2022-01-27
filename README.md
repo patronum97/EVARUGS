@@ -1,1 +1,1 @@
-# EVARUGS
+# EVARUGS - учебный проект
