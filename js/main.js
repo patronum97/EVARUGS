@@ -14,3 +14,20 @@ const swiper = new Swiper(".swiper", {
     }, */
   },
 });
+
+const modalWindow = document.querySelector(".modal");
+const buttonModal = document.querySelector(".main-display__button");
+
+buttonModal.addEventListener("click", () => {
+  modalWindow.classList.add("active");
+});
+
+modalWindow.addEventListener("click", (e) => {
+  /* отлавливаем нажатие на класс modal_inner */
+  const isModal = e.target.closest(".modal__inner");
+  if (isModal) {
+    modalWindow.classList.add("active");
+  } else {
+    modalWindow.classList.remove("active");
+  }
+});
