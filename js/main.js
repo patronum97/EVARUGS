@@ -9,9 +9,12 @@ const swiper = new Swiper(".swiper", {
   toggle: true,
   autoHeight: true,
   breakpoints: {
-    /*  320: {
-      slidesPerView: 1,
-    }, */
+    768: {
+      direction: "horizontal",
+    },
+    320: {
+      direction: "vertical",
+    },
   },
 });
 
