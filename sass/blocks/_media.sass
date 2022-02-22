@@ -11,6 +11,9 @@
 @media (max-width: 1100px)
   .container
     max-width: 90%
+  .footer
+    &__wrapper
+      padding: 10% 10% 
 @media (max-width: 900px)
   .header
     &__text
@@ -23,6 +26,9 @@
       &-1
         margin-right: 0
         margin-bottom: 4%
+  .footer
+    &__wrapper
+      padding: 10% 5%
 @media (max-width: 768px)
   .container
     max-width: 85%
@@ -90,14 +96,130 @@
         margin-bottom: 1rem
   .review
     &__slider
-      max-width: 70%
+    &__wrapper
+      padding-left: 15%
     &__slide
+      width: 70%
       &-img
         width: 9.5rem
         height: 11rem
       &-photo
         width: 9.0rem
         height: 10.8rem
+  .footer
+    &__wrapper
+      padding: 15% 0
+    &__inst
+      margin-left: -4%
+@media (max-width: 600px)
+  .header
+    &__maps
+      margin-left: -4%
+      &-img
+        margin-right: 0.5rem
+    &__inst
+      &-img
+        margin-right: 0.5rem
+@media (max-width: 470px)
+  .header
+    padding-bottom: 2.5rem
+    &__inst, &__telephone-img, &__maps-img
+      display: none
+    &__wrapper
+      flex-direction: column
+    &__telephone
+      margin-bottom: 6%
+    &__maps
+      text-align: center
+    &__text
+      font-size: 1.4rem
+      &-map
+        font-size: 1.7rem
+        font-weight: 300
+  .main
+    &-display
+      padding-top: 2.5rem
+      &__wrap
+        margin-left: 0
+      &__top
+        justify-content: center
+      &__logo
+        margin-right: 14%
+        &-img
+          width: 6rem
+          height: 3.5rem
+          margin-right: 8%
+        &-text
+          font-size: 1.8rem
+      &__center
+        flex-direction: column
+        margin-top: 0
+      &__left
+        width: 100%
+        padding-top: 14%
+      &__title
+        font-size: 2.5rem
+        text-align: center
+        margin-bottom: 1rem
+      &__suptitle
+        font-size: 2rem
+        text-align: center
+        margin-bottom: 1rem
+      &__button
+        font-size: 1rem
+        text-align: center
+        padding: 0.6rem 2.1rem
+        margin: 0 auto
+        display: block
+      &__right
+        display: none
+  .about
+    padding-top: 16%
+    &__title
+      font-size: 2rem
+      margin-bottom: 22%
+    &__item
+      &-img
+        height: 15.4rem
+      &-title
+        font-size: 3rem
+      &-description
+        padding: 5% 12% 3% 7%
+  .footer
+    &__wrapper
+      justify-content: center
+      flex-direction: column
+      align-items: center
+    &__inst
+      margin-left: 0
+      margin-bottom: 5%
+      &-img
+        text-align: center
+        margin: 0 auto
+        display: block
+    &__contact
+      order: -1
+      margin-bottom: 5%
+    &__header
+      text-align: center
+    &__list
+      text-align: center
+    &::before
+      display: none
+    &::after
+      right: 14%
+  .review
+    &__slide 
+      &-text
+        font-size: 1.2rem
+      &-img
+        height: 10.5rem
+      &-photo
+        height: 10.6rem
+
+
+    
+    
 
 
 

@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 3,
+  slidesPerView: "auto",
   loop: true,
   speed: 400,
   spaceBetween: 70,
@@ -9,8 +9,9 @@ const swiper = new Swiper(".swiper", {
   toggle: true,
   autoHeight: true,
   breakpoints: {
-    768: {
+    769: {
       direction: "horizontal",
+      slidesPerView: "auto",
     },
     320: {
       direction: "vertical",
