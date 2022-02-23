@@ -8,6 +8,11 @@
   .about
     &__main
       gap: 0rem 5.5%
+@media (max-width: 1200px)
+  .modal
+    &__inner
+      width: 90%
+
 @media (max-width: 1100px)
   .container
     max-width: 90%
@@ -29,6 +34,20 @@
   .footer
     &__wrapper
       padding: 10% 5%
+  .modal
+    &__input
+      &-group
+        flex-basis: 100%
+        width: 100%
+        &-wrapper
+          flex-direction: column
+          width: 90%
+    &__message
+      width: 90%
+    &__inner
+      &-elements
+        
+
 @media (max-width: 768px)
   .container
     max-width: 85%
@@ -54,7 +73,7 @@
     &__inst
       margin-right: -7%
       &-img
-        width: 2.7rem
+        width: 2.3rem
         height: 2.3rem
   .main
     &-display
@@ -111,6 +130,53 @@
       padding: 15% 0
     &__inst
       margin-left: -4%
+  .modal
+    &__input
+      &-group
+        &-wrapper
+          width: 75%
+    &__message
+      width: 75%
+@media (max-width: 650px)
+  .modal
+    &__input
+      &-group
+        &-wrapper
+          width: 50%
+    &__message
+      width: 50%
+  .main
+    &-display
+      padding-top: 3.5rem
+      &__logo
+        &-img
+          width: 7rem
+          height: 4rem
+        &-text
+          font-size: 2.6rem
+      &__title 
+        font-size: 3rem
+      &__suptitle
+        font-size: 2rem
+      &__center
+        margin-top: -8%
+      &__button
+        font-size: 1.2rem
+        padding: 1rem 2.2rem
+  .about
+    padding-top: 3%
+    &__title
+      font-size: 3rem
+      margin-bottom: 10%
+  .review
+    &__slide
+      &-text 
+        font-size: 1.5rem
+  .footer
+    &__list
+      &-contact 
+        line-height: 1.5rem
+
 @media (max-width: 600px)
   .header
     &__maps
@@ -205,7 +271,7 @@
     &__list
       text-align: center
     &::before
-      display: none
+      left: -1%
     &::after
       right: 14%
   .review
@@ -216,7 +282,23 @@
         height: 10.5rem
       &-photo
         height: 10.6rem
-
+  .modal
+    &-header
+      font-size: 1.5rem
+    &__input
+      font-size: 1rem
+      &-group
+        &-wrapper
+          width: 35%
+    &__policy
+      margin-bottom: 1.5rem
+    &__message
+      width: 35%
+    &__button
+      font-size: 0.9rem
+      padding: 0.8rem 1.9rem
+  .check
+    font-size: 1rem
 
     
     

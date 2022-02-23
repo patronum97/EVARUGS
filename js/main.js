@@ -24,6 +24,8 @@ const buttonModal = document.querySelector(".main-display__button");
 
 buttonModal.addEventListener("click", () => {
   modalWindow.classList.add("active");
+  document.body.style.overflow = "hidden";
+  document.body.style.paddingRight = "22px";
 });
 
 modalWindow.addEventListener("click", (e) => {
@@ -33,5 +35,7 @@ modalWindow.addEventListener("click", (e) => {
     modalWindow.classList.add("active");
   } else {
     modalWindow.classList.remove("active");
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "0";
   }
 });

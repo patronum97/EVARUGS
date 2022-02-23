@@ -28,9 +28,15 @@
             </div>
             <div class="header__telephone-text">
               <span class="header__text header__telephone-1"
-                >+375 29 292-29-29 (VEL)</span
+                ><a class="header__text" href="tel:375292922929"
+                  >+375 29 292-29-29 (VEL)</a
+                ></span
               >
-              <span class="header__text">+375 33 333-33-33 (МТС)</span>
+              <span class="header__text"
+                ><a class="header__text" href="tel:375333333333"
+                  >+375 33 333-33-33 (МТС)</a
+                ></span
+              >
             </div>
           </div>
           <div class="header__maps">
@@ -38,17 +44,23 @@
               <img class="header__icon" src="img/map.svg" alt="Icon: map" />
             </div>
             <div class="header__maps-text">
-              <span class="header__text header__text-map">ваш город</span>
+              <span class="header__text header__text-map" id="tow"
+                >Ваш город: ... определяется ...</span
+              >
             </div>
           </div>
           <div class="header__inst">
-            <div class="header__inst-img">
+            <a
+              href="https://www.instagram.com"
+              class="header__inst-img"
+              target="_blank"
+            >
               <img
                 class="header__icon"
                 src="img/inst.svg"
                 alt="Icon: instagramm"
               />
-            </div>
+            </a>
             <div class="header__inst-text">
               <span class="header__inst-text header__text"
                 >посетите нашу страницу</span
@@ -74,9 +86,15 @@
             </div>
 
             <ul class="main-display__nav">
-              <li class="main-display__item">отзывы</li>
-              <li class="main-display__item">что это?</li>
-              <li class="main-display__item">контакты</li>
+              <li class="main-display__item">
+                <a href="#feedback" class="main-display__item">отзывы</a>
+              </li>
+              <li class="main-display__item">
+                <a href="#whatis" class="main-display__item">что это?</a>
+              </li>
+              <li class="main-display__item">
+                <a href="#contacts" class="main-display__item">контакты</a>
+              </li>
             </ul>
           </div>
           <!-- /.main-display__top -->
@@ -101,7 +119,7 @@
       <!-- /.container -->
     </div>
     <!-- /.main-display -->
-    <div class="about">
+    <div class="about" id="whatis">
       <div class="container about__container">
         <div class="about__wrapper">
           <h2 class="about__title">
@@ -157,7 +175,7 @@
       </div>
       <!-- /.container -->
     </div>
-    <div class="review">
+    <div class="review" id="feedback">
       <div class="review__slider swiper">
         <div class="swiper-wrapper review__wrapper">
           <div class="review__slide swiper-slide">
@@ -219,23 +237,35 @@
     </div>
     <!-- /.review -->
     <!-- /.about -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__inst">
             <h3 class="footer__header">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
-            <div class="footer__inst-img">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="footer__inst-img"
+            >
               <img src="img/footer-inst.svg" alt="Icon: instagramm" />
-            </div>
+            </a>
           </div>
           <div class="footer__contact">
             <h3 class="footer__header">КОНТАКТНЫЕ ТЕЛЕФОНЫ</h3>
             <ul>
               <li class="footer__list footer__list-contact">
-                +375 29 292-29-29 (VEL)
+                <a
+                  class="footer__list footer__list-contact"
+                  href="tel:375292922929"
+                  >+375 29 292-29-29 (VEL)</a
+                >
               </li>
               <li class="footer__list footer__list-contact">
-                +375 33 333-33-33 (МТС)
+                <a
+                  class="footer__list footer__list-contact"
+                  href="tel:375333333333"
+                  >+375 33 333-33-33 (МТС)</a
+                >
               </li>
             </ul>
           </div>
@@ -255,38 +285,69 @@
     <!-- /.footer -->
     <form action="#" class="modal">
       <div class="modal__inner">
-        <div class="modal__inner-header">
-          <h2 class="modal-header">ФОРМА ЗАЯВКИ</h2>
-        </div>
-        <div class="modal__inner-elements">
-          <div class="modal__input-group-wrapper">
-            <div class="modal__input-group">
-              <input type="text" class="modal__input modal__text" placeholder="Ваше имя"/>
-            </div>
-            <div class="modal__input-group">
-              <input type="email" class="modal__input modal__text" placeholder="Ваш email"/>
-            </div>
+        <div class="modal__wrapper">
+          <div class="modal__inner-header">
+            <h2 class="modal-header">ФОРМА ЗАЯВКИ</h2>
           </div>
-          <textarea cols="30" rows="5" class="modal__message modal__input" name="" id="" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
-          
-          <div class="modal__policy">
-            <input class="checkbox" type="checkbox" id="modal__check" />
-            <label for="modal__check" >
-              <span class="check">Я соглашаюсь с</span>
-              <a class="check" href="#">Политикой безопасности</a>
-            </label>
+          <div class="modal__inner-elements">
+            <div class="modal__input-group-wrapper">
+              <div class="modal__input-group">
+                <input
+                  type="text"
+                  class="modal__input modal__text"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="modal__input-group">
+                <input
+                  type="email"
+                  class="modal__input modal__text"
+                  placeholder="Ваш email"
+                />
+              </div>
+            </div>
+            <textarea
+              cols="30"
+              rows="5"
+              class="modal__message modal__input"
+              name=""
+              id=""
+              placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+            ></textarea>
+
+            <div class="modal__policy">
+              <input class="checkbox" type="checkbox" id="modal__check" />
+              <label for="modal__check">
+                <span class="check">Я соглашаюсь с </span>
+                <a class="check" href="#">Политикой безопасности</a>
+              </label>
+            </div>
+            <button type="button" class="button modal__button">
+              отправить
+            </button>
           </div>
-          <button
-            type="button"
-            class="button main-display__button modal__button"
-          >
-            отправить
-          </button>
         </div>
-        </div>
-          
+        <!-- /.modal__wrapper -->
       </div>
     </form>
+    <script
+      src="http://code.jquery.com/jquery-1.10.2.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        ymaps.ready(function () {
+          var geolocation = ymaps.geolocation;
+          $("#cou").html("Ваша страна: " + geolocation.country);
+          $("#tow").html("Ваш город: " + geolocation.city);
+          $("#reg").html("Ваш регион: " + geolocation.region);
+        });
+      });
+    </script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
